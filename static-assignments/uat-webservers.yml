@@ -1,4 +1,4 @@
 ---
 - hosts: uat-webservers
   roles:
-    - webserver
+    - /var/lib/jenkins/workspace/save_artifacts/home/ubuntu/ansible-config-artifact/roles/webserver
