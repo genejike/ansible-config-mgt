@@ -2,3 +2,4 @@
   roles:
   - { role: /var/lib/jenkins/workspace/save_artifacts/home/ubuntu/ansible-config-artifact/roles/nginx, when: enable_nginx_lb and load_balancer_is_required }
   - { role: /var/lib/jenkins/workspace/save_artifacts/home/ubuntu/ansible-config-artifact/roles/apache, when: enable_apache_lb and load_balancer_is_required }
+
