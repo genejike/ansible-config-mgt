@@ -27,17 +27,16 @@
       }
     }
 
-  stage('deploy'){
+  stage('deploy') {
   steps{
     script{
       sh 'echo "Deploy stage"'
     }
   }
 }
-  stage('clean_up'){
+  stage('clean') {
   steps{
     script{
-
       sh 'echo "Cleaning stage"'
     }
   }
