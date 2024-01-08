@@ -37,7 +37,7 @@
   stage('clean') {
   steps{
     script{
-      sh 'echo "Cleaning stage"'
+      sh 'echo "Clean stage"'
     }
   }
 }
