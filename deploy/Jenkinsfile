@@ -38,7 +38,7 @@ stage('deploy'){
 
 
 stage('clean_up'){
-  staeps{
+  steps{
     script{
 
       sh'"Cleaning stage"'
