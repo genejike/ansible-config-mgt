@@ -1,7 +1,6 @@
   pipeline {
     agent any
-
-
+  
   stages {
     stage('Build') {
       steps {
@@ -20,7 +19,7 @@
       }
     }
 
- stage('Package') {
+  stage('Package') {
   steps {
         script {
           sh 'echo "Packaging Stage"'
@@ -28,20 +27,18 @@
       }
     }
 
-stage('deploy'){
+  stage('deploy'){
   steps{
     script{
       sh 'echo "Deploy stage"'
     }
   }
 }
-
-
-stage('clean_up'){
+  stage('clean_up'){
   steps{
     script{
 
-      sh'"Cleaning stage"'
+      sh'echo "Cleaning stage"'
     }
   }
 }
