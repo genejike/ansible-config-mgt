@@ -38,7 +38,7 @@
   steps{
     script{
 
-      sh'echo "Cleaning stage"'
+      sh 'echo "Cleaning stage"'
     }
   }
 }
