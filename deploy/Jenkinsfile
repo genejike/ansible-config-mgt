@@ -8,9 +8,7 @@ pipeline {
       string(name: 'inventory', defaultValue: 'dev',  description: 'This is the inventory file for the environment to deploy configuration')
     }
 
-
-
-   stages {
+stages {
         stage('SCM checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/genejike/ansible-config-mgt'
@@ -19,7 +17,7 @@ pipeline {
 
       stage('Prepare Ansible For Execution') {
         steps {
-          sh 'echo ${WORKSPACE}' 
+          sh "echo ${WORKSPACE}"
           sh 'sed -i "3 a roles_path=${WORKSPACE}/roles" ${WORKSPACE}/deploy/ansible.cfg'  
         }
      }
