@@ -5,10 +5,10 @@
 <Todo-Web-Server-Private-IP-Address>
 
 [nginx]
-<Nginx-Private-IP-Address>
+172.31.45.180
 
 [db:vars]
 ansible_user=ec2-user
 
 [db]
-<DB-Server-Private-IP-Address>
+172.31.41.27

@@ -1,8 +1,8 @@
 [jenkins]
-<Jenkins-Private-IP-Address>
+172.31.32.140
 
 [nginx]
-<Nginx-Private-IP-Address>
+172.31.45.180
 
 [sonarqube]
 <SonarQube-Private-IP-Address>
